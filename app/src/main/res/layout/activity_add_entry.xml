@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    tools:context="com.alc.ymrj.journalapp.AddEntryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/form_paddingV"
+        android:paddingLeft="@dimen/form_paddingH"
+        android:paddingRight="@dimen/form_paddingV"
+        android:paddingTop="@dimen/form_paddingV">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="false">
+
+            <EditText
+                android:id="@+id/et_entry_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_entry_title"
+                android:inputType="text"
+                android:text=""
+                android:textColorHint="@null"
+                android:textSize="@dimen/form_section_size" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorSeparationhorizontale" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/form_paddingV"
+        android:paddingLeft="@dimen/form_paddingH"
+        android:paddingRight="@dimen/form_paddingV"
+        android:paddingTop="@dimen/form_paddingV">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="false">
+
+            <EditText
+                android:id="@+id/et_entry_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/enter_entry_content"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:maxLines="6"
+                android:padding="4dp"
+                android:scrollbars="vertical"
+                android:text=""
+                android:textSize="@dimen/form_section_size" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorSeparationhorizontale" />
+
+    <Button
+        android:id="@+id/btn_save_entry"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_entry" />
+
+    <LinearLayout
+        android:id="@+id/update_entry_actions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="8dp"
+                android:text="Last edited : " />
+
+            <TextView
+                android:id="@+id/tv_date_last_edited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                tools:text="June 28, 2018 09:24" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_update_entry"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update_entry" />
+    </LinearLayout>
+</LinearLayout>

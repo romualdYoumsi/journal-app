@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "171371236724",
+    "firebase_url": "https://alc-journal-app-7b95f.firebaseio.com",
+    "project_id": "alc-journal-app-7b95f",
+    "storage_bucket": "alc-journal-app-7b95f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171371236724:android:5740666f71cc5aa6",
+        "android_client_info": {
+          "package_name": "com.alc.ymrj.journalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171371236724-k8o5kl32v55lp9n08pa7k6lhobpsj56t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhNNllKSMT8-bAcb5akBjp9qwp_-yQI8Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
